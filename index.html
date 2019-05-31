@@ -4,98 +4,122 @@
 		<!-- Not seen by site visitors. Stores info for search engines, metadata and links to other files browser needs like style sheets-->
 		<meta charset="utf-8">
 		<title>
-			<!--shows up on browser tab, importatnf or search engines-->
 			Exceptional Realty Group- Luxury Homes - About
+			<!--shows up on browser tab, importatnf or search engines-->
 		</title>
+
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 	</head>
 	<body>
+		<div id='social'>
+			<a href='#'>Twitter</a>
+			<a href='#'>Facebook</a>
+			<a href='#'>Google Plus</a>
+		</div>
 		<header>
-		<!--visible crap Entire viewable area of webpage. Text, links, images, and media-->
-		Hello World. <!--naked text like this will show up-->
+		<!--visible crap Entire viewable area of webpage. Text, links, images, and media--> <!--naked text like this will show up-->
 
-		Hello Moon.
+		
 		<!--Whitespace between these two lines of text ignored.-->
 		<!-- Using p tags tells browser lines within are different paragraphs and will separate them accordingly.-->
 <!-- 
 		<p>Hello World, again</p>
 		<p>Hello Moon, again</p> -->
-			<div id='logo'>
-				<h1>Exceptional</h1>
-				<h2>Realty Group</h2>
-			</div>
-		<!--links-->
-			<nav>
-				<a href = "index.html">About</a>
-				<a href = "new-properties.html">New properties</a>
-				<a href = "real-estate-listings.html">Listings</a>
-				<a href = "market-report.html">Market Report</a>
-				<a href = "contact.html">Contact</a>
-				<!--All above links are internal. Link below is EXTERNAL, meaning that you have to type the whole hyperlink out-->
-				<a href ="http://hud.gov" target = "_blank">H.U.D.</a>
-			</nav>
+			<div class='wrapper clearfix'>
+				<div id='logo'>
+					<h1>Exceptional</h1>
+					<h2>Realty Group</h2>
+				</div>
+			<!--links-->
+				<nav>
+					<a href = "index.html">About</a>
+					<a href = "new-properties.html">New properties</a>
+					<a href = "real-estate-listings.html">Listings</a>
+					<a href = "market-report.html">Market Report</a>
+					<a href = "contact.html">Contact</a>
+					<!--All above links are internal. Link below is EXTERNAL, meaning that you have to type the whole hyperlink out-->
+					<a href ="http://hud.gov" target = "_blank">H.U.D.</a>
+				</nav>
 		<!--target decides how the page opens. Using _blank opens a new tab instead of changing the website the browser is on.-->
+			</div> <!--closing .wrapper-->
 		</header>
-		
-		<section id ='featured-propety'>
-			<figure>
-				<img src ="images/grover thing.jpg" alt="some pendant thing." title ="The pendant that started Exceptional Realty">	
-				<figcaption> 345 Carl St Apt 12, Carrol Rd. Brooklyn, NY -- Photo by Denise Richards></figcaption>	
-			</figure>
+		<div class='wrapper clearfix'>
+			<section id ='featured-propety' class='col-3 first'>
+				<figure>
+					<img src ="images/grover thing.jpg" alt="some pendant thing." title ="The pendant that started Exceptional Realty">	
+					<figcaption> 345 Carl St Apt 12, Carrol Rd. Brooklyn, NY -- Photo by Denise Richards>
+					</figcaption>	
+				</figure>
 
-			<p>A line break is going to occur now<br>This text is on the following line but still in the p tag
-			</p>
+				<p>A line break is going to occur now<br>This text is on the following line but still in the p tag
+				</p>
 
-			<p> Lorem ipsum dolor sit amet balbalbalbalbalblablablbalablbalbalbablalbablablblablalbablablablablablablablablbablalbablalbablablalbablablalbablablablablablablablablbalablabllbalbablalbablalbalbalabbla
-			</p>
-			<!-- The h1 heading is the largest heading and also carries most improtance for search engines. -->
+				<p> Lorem ipsum dolor sit amet balbalbalbalbalblablablbalablbalbalbablalbablablblablalbablabl
+					ablablablablablablbablalbablalbablablalbablablalbablablablablablablablablbalablabllbalbablalbablalbalbalabbla
+				</p>
+				<!-- The h1 heading is the largest heading and also carries most improtance for search engines. -->
 
-			<!-- the src points to source of image. Alt is alternative text, read aloud to vision impaired user and also important for search engines, which read alt-text --> 
-				<!--images is our folder name
-					grover thing is our filename to open 
-					../ leaves current folder goes up to parent folder/dir And is relative to file we are currently working on-->
-		</section>	
+				<!-- the src points to source of image. Alt is alternative text, read aloud to vision impaired user and also important for search engines, which read alt-text --> 
+					<!--images is our folder name
+						grover thing is our filename to open 
+						../ leaves current folder goes up to parent folder/dir And is relative to file we are currently working on-->
+			</section>	
 
-		<section id='promotional'>	
-			<figure>
-				<video controls>
-					<source src="videos/real-estate.mp4" type="video/mp4">
-					<source src="videos/real-estate.ogv" type="video/ogg">
-						 <a href="http://browsehappy.com" target="_blank">Your browser does not support HTML5 video. Please upgrade your browser.</a>
-				</video>
-				<figcaption>Exceptional Realty Group Promotional Video -- Source: archive.org</figcaption>
-			</figure>
-		</section>
-	
+			<section id='promotional' class='col-2 first'>
+				<figure>
+					<video controls>
+						<source src="videos/real-estate.mp4" type="video/mp4">
+						<source src="videos/real-estate.ogv" type="video/ogg">
+							 <a href="http://browsehappy.com" target="_blank">Your browser does not support HTML5 video. Please upgrade your browser.</a>
+					</video>
+					<figcaption>Exceptional Realty Group Promotional Video -- Source: archive.org</figcaption>
+				</figure>
+			</section>
+
+			<section id='news' class='col-1'>
+				<h3>Company News</h3>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+			</section>
+		</div> <!--wrapper-->
+
 		<section id='details'>
-			<div>
-				<h3>Contact</h3>
-				<p>
-					email: <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
-					phone: +1 710 555 1234
-				</p>
-				<h3>Correspondence</h3>
-				<address>
-					Exceptional Realty<br>
-					P.O. Box 5555<br>
-					Brooklyn, NY, 11201
-				</address>
-			</div>
+			<div class='wrapper clearfix'>
+				<div class='col-1 first'>
+					<h3>Contact</h3>
+					<p>
+						email: <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
+						phone: +1 710 555 1234
+					</p>
+					<h3>Correspondence</h3>
+					<address>
+						Exceptional Realty<br>
+						P.O. Box 5555<br>
+						Brooklyn, NY, 11201
+					</address>
+				</div>
 
-			<div>
-				<h3>Links</h3>
-				<p>
-					<a href="#" target="_blank">Home Restoration</a><br>
-					<a href="#" target="_blank">Affordable Mortgages</a><br>
-					<a href="#" target="_blank">Professional Moving Crew</a>
-				</p>
-			</div>
+				<div class='col-1'>
+					<h3>Links</h3>
+					<p>
+						<a href="#" target="_blank">Home Restoration</a><br>
+						<a href="#" target="_blank">Affordable Mortgages</a><br>
+						<a href="#" target="_blank">Professional Moving Crew</a>
+					</p>
+				</div>
 
-			<div>
-				<h3>Follow</h3>
-			</div>
+				<div class='col-1'>
+					<h3>Follow</h3>
+					<p>
+						<a href='#' target='_blank'>YouTube</a><br>
+						<a href='#' target='_blank'>Facebook</a><br>
+						<a href='#' target='_blank'>Twitter</a>
+					</p>
+				</div>
+			</div> <!--wrapper-->
+		</section>
 
 
 		<footer>
